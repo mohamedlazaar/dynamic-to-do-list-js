@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
         alert('enter task')
     }}
     addButton.addEventListener('click', addTask);
-    taskInput.addEventListener('keyup', function(event){
+    taskInput.addEventListener('keypress', function(event){
         if(event.key === 'Enter'){
             addTask();
             }
