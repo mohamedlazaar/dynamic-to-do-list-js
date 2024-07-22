@@ -17,7 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
       const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
       storedTasks.forEach(taskText => addTask(taskText, false));
     }
+  //   function addTask() {
+  //     const taskText = taskInput.value.trim();
   
+  //     if (taskText === '') {
+  //       alert('Please enter a task');
+  //       return;
+  //     }
+  
+  //     const listItem = document.createElement('li');
+  //     listItem.textContent = taskText;
+  
+  //     const removeBtn = document.createElement('button');
+  //     removeBtn.textContent = 'Remove';
+  //     removeBtn.classList.add('remove-btn');
+  //     removeBtn.addEventListener('click', () => {
+  //       taskList.removeChild(listItem);
+  //     });
+  
+  //     listItem.appendChild(removeBtn);
+  //     taskList.appendChild(listItem);
+  
+  //     taskInput.value = '';
+  //   }
+  // });
     function addTask(taskText, save = true) {
       const listItem = document.createElement('li');
       listItem.textContent = taskText;
