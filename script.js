@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('task-input');
-    const addTaskBtn = document.getElementById('add-task-btn');
+    const addButton = document.getElementById('add-task-btn');
     const taskList = document.getElementById('task-list');
   
     // Load tasks from Local Storage
     loadTasks();
   
-    addTaskBtn.addEventListener('click', addTask);
+    addButton.addEventListener('click', addTask);
     taskInput.addEventListener('keypress', (event) => {
       if (event.key === 'Enter') {
         addTask();
